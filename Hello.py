@@ -34,5 +34,9 @@ def main():
         # Display pixelated image
         st.image(pixelated_image, caption="Pixelated Image", use_column_width=True)
 
+        # Display number of pixels for pixelated image
+        num_pixels = pixelated_image.width * pixelated_image.height
+        st.write(f"Number of pixels in pixelated image: {num_pixels}")
+
 if __name__ == "__main__":
     main()
